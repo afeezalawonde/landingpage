@@ -1508,7 +1508,9 @@ p {
         bottom: 80px;
         margin: auto; }
         .carousel-section-wrapper .carousel-control.carousel-control-prev {
-          left: 42%; }
+          left: 42%;
+          margin-right: 20px;
+        }
         .carousel-section-wrapper .carousel-control.carousel-control-next {
           left: 10%; } }
     @media (max-width: 767px) {
@@ -1522,7 +1524,9 @@ p {
         bottom: 80px;
         margin: auto; }
         .carousel-section-wrapper .carousel-control.carousel-control-prev {
-          left: 37%; }
+          left: 37%;
+          margin-right: 30px;
+        }
         .carousel-section-wrapper .carousel-control.carousel-control-next {
           left: 23%; } }
     .carousel-section-wrapper .carousel-control span {
