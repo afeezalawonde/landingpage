@@ -19,11 +19,14 @@ Index Of css
     01. Common CSS
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+
+
 html {
   scroll-behavior: smooth; }
+  
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6A7C92;
@@ -179,7 +182,8 @@ p {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  padding: 16px 48px;
+  padding: 30px 300px;
+  margin: 0px 250px 50px 250px;
   font-size: 18px;
   border-radius: 50px;
   color: #fff;
@@ -197,6 +201,12 @@ p {
     color: #000000;
 
   }
+
+  @media (max-width: 767px) {
+    .theme-btn {
+      padding: 20px 85px;
+      margin: 0px 70px 0px 40px; } }
+
   .theme-btn.border-btn {
     padding: 14px 40px;
     background: transparent;
@@ -298,6 +308,9 @@ p {
   font-weight: 700;
   color: #f15d23;
   margin-bottom: 5px; }
+  
+
+
   @media (max-width: 767px) {
     .section-title span {
       font-size: 20px; } }
@@ -324,7 +337,8 @@ p {
       line-height: 41px; } }
 
 .section-title p {
-  font-size: 18px; }
+  font-size: 28px;
+margin-top: 30px; }
 
 /*===== All Preloader Style =====*/
 .preloader {
@@ -1189,7 +1203,7 @@ p {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-  background: #fff;
+  background: transparent;
   padding: 0px 0; }
   .sticky .navbar {
     padding: 10px 0; }
@@ -1245,7 +1259,7 @@ p {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color:transparent;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1260,7 +1274,7 @@ p {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color:transparent;
     z-index: 9;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(5, 20, 65, 0.1);
     -moz-box-shadow: 0px 15px 20px 0px rgba(5, 20, 65, 0.1);
@@ -1361,7 +1375,7 @@ p {
       top: 0; }
   .navbar-nav .nav-item .sub-menu {
     min-width: 200px;
-    background-color: #fff;
+    background-color:transparent;
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
@@ -1381,7 +1395,7 @@ p {
     .navbar-nav .nav-item .sub-menu::after {
       content: '';
       position: absolute;
-      background: #fff;
+      background:transparent;
       width: 20px;
       height: 20px;
       top: -10px;
@@ -1455,6 +1469,8 @@ p {
 .carousel-section-wrapper {
   position: relative;
   z-index: 3; }
+
+
   .carousel-section-wrapper .carousel-section {
     position: relative;
     z-index: 3; }
@@ -1466,11 +1482,29 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(to right, rgba(241, 93, 35, 0.267) 0%, #000000 100%); }
+    }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
-      margin-bottom: 25px; }
+      margin: 60px 100px 25px 100px;
+      line-height: 85px;
+      font-size: 80px; }
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
-      margin-bottom: 40px; }
+      margin: -100px 100px 25px 100px;
+      font-size: 30px;
+      line-height: 36px; }
+
+      @media only screen and (max-width: 768px) and (max-width: 991px) {
+        .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title h2 {
+          margin: 10px 50px 25px 50px;
+          line-height: 55px;
+          font-weight: 900;
+          font-size: 40px; }
+        .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .section-title p {
+          margin: -180px 50px 25px 50px;
+          font-size: 20px;
+          line-height: 36px; }
+        }
+
+
     .carousel-section-wrapper .carousel-section.carousel-item .carousel-content .border-btn {
       border-color: #fff;
       color: #fff; }
@@ -1525,7 +1559,6 @@ p {
         margin: auto; }
         .carousel-section-wrapper .carousel-control.carousel-control-prev {
           left: 37%;
-          margin-right: 30px;
         }
         .carousel-section-wrapper .carousel-control.carousel-control-next {
           left: 23%; } }
@@ -1613,6 +1646,59 @@ p {
 /*===========================
     04. About CSS 
 ===========================*/
+
+.services-item {
+    justify-self: center;  
+    text-align: center;
+    margin: 30px 30px 30px 30px;
+    padding: 20px 20px 40px 20px;
+    background: transparent;
+    border: 1.5px solid #000000;
+    border-radius: 5%;
+    color: #6A7C92;
+    font-size: 18px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.services-items {
+  justify-self: center;  
+  text-align: center;
+  margin: 30px 150px 30px 150px;
+  padding: 20px 10px 40px 10px;
+  background: #f360265d;
+  border-radius: 20px;
+  color: #a4a5a5;
+  font-size: 18px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 768px) and (max-width: 991px) {
+  .services-items {
+    justify-self: center;  
+    text-align: center;
+    margin: 30px 10px 30px 10px;
+    padding: 20px 10px 40px 10px;
+    background: transparent;
+    border: 1.5px solid #f15d23;
+    border-radius: 20px;
+    color: #a4a5a5;
+    font-size: 18px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+}
+
+.services-item h3 {
+  font-size: 28px;
+  font-weight: 400;
+}
+
 .about-section {
   background: #EFF2F9;
   padding: 180px 0;
@@ -1833,6 +1919,7 @@ p {
 /*===========================
     06. Process CSS 
 ===========================*/
+
 .process-section .process-img-wrapper {
   position: relative;
   z-index: 1; }
@@ -1870,6 +1957,32 @@ p {
       vertical-align: top; }
     .process-section .process-img-wrapper .process-img-bottom .img-3 {
       border-radius: 0 0 250px 250px; }
+
+    .process-section .carousel-content .section-title p {
+        font-size: 20px;
+        text-align: left;
+        line-height: 30px; 
+        margin: 0px 150px 0px 150px;
+      }
+
+      @media only screen and (max-width: 768px) and (max-width: 991px) {
+        .process-section .carousel-content .section-title p {
+          font-size: 20px;
+          text-align: left;
+          line-height: 30px; 
+          margin: 0px 20px 0px 20px;
+        } 
+            }
+
+      .process-section .carousel-content .section-title h2 {
+        font-size: 40px;
+        text-align: left;
+        line-height: 40px; 
+        margin: 30px 150px 30px 150px;
+        border: 1.5px solid black;
+        border-radius: 20px;
+        padding: 50px
+      }
 
 
 /*===========================
@@ -1925,6 +2038,35 @@ p {
   .contact-section.cta-bg {
     clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%);
     z-index: 3; }
+
+    .contact-section .section-title {
+      margin: 0px 150px 0px 150px; }
+
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .contact-section .section-title {
+          margin: auto; } 
+        
+          .contact-section .section-title h2 {
+            margin: 0px 150px 0px 150px; }
+
+            .contact-section .section-title p {
+              font-size: 15px; }
+        }
+      @media (max-width: 767px) {
+        .contact-section .section-title {
+          margin: 0px 20px 0px 20px; }
+        
+          .contact-section .section-title p {
+            font-size: 15px; }}
+
+    .contact-section .section-title p {
+      color: white;
+      font-size: 25px;
+      line-height: 30px; }
+      .contact-section.cta-bg {
+        clip-path: polygon(0 0, 100% 12%, 100% 88%, 0 100%);
+        z-index: 3; }
+
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .contact-section.cta-bg {
         clip-path: polygon(0 3%, 100% 12%, 100% 88%, 0 97%); } }
@@ -1939,7 +2081,7 @@ p {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: linear-gradient(to left, rgba(0, 0, 0, 0.18) 0%, #f15d23 100%); }
+      background: linear-gradient(to left, rgba(0, 0, 0, 0.877) 0%, #f15d23 100%); }
   .contact-section .contact-item-wrapper .contact-item {
     display: flex;
     border: 1px solid #F4EEFB;
@@ -2071,6 +2213,126 @@ p {
   .contact-form-wrapper .contact-form .theme-btn {
     font-weight: 500;
     padding: 18px 90px; }
+
+/*============================
+          Form
+  =========================*/
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  
+  form {
+    max-width: 300px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+  }
+  
+  .form h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+  }
+  
+  select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+  }
+  
+  button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    margin-bottom: 10px;
+  }
+  
+  fieldset {
+    margin-bottom: 30px;
+    border: none;
+  }
+  
+  legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  label.light {
+    font-weight: 300;
+    display: inline;
+  }
+  
+  .number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+    border-radius: 100%;
+  }
+  
+  @media screen and (min-width: 480px) {
+  
+    form {
+      max-width: 480px;
+    }
+  
+  }
+  
+
+
 
 /*===========================
     13. Footer CSS 
